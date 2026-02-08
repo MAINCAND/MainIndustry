@@ -1,0 +1,66 @@
+# 关键修改：使用 HeatCrafter 才能读取热量逻辑
+type: HeatCrafter
+name: sand-washer
+description: Uses concentrated heat to extract halite from sand.
+size: 2
+health: 160
+
+
+hasLiquids: true
+hasItems: true
+
+itemCapacity: 20
+liquidCapacity: 10
+
+
+
+heatRequirement: 3.0
+
+overheatScale: 1.0
+
+consumes: {
+  
+  items: [
+    sand/2
+  ]
+  liquids: [
+    water/0.3
+  ]
+}
+
+requirements: [
+  copper/50
+  lead/30
+  graphite/20
+  silicon/10
+]
+
+category: crafting
+craftTime: 120
+
+outputItems: [
+  halite/1
+  sand/1
+]
+
+
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawRegion
+      suffix: -bottom
+    }
+    {
+      type: DrawLiquidTile
+      drawLiquid: water
+    }
+    {
+      type: DrawDefault
+    }
+  
+    {
+      type: DrawHeatInput
+    }
+  ]
+}

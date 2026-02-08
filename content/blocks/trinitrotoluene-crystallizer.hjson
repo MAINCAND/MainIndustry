@@ -30,7 +30,7 @@ heatConfig: {
 consumes: {
   power: 25
   items: [
-    rock-salt/1
+    halite/1
   ]
 
   liquids: [
