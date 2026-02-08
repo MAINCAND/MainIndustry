@@ -1,0 +1,99 @@
+
+type: GenericCrafter
+name: trinitrotoluene-crystallizer
+localizedName: 硝化苯晶结晶塔
+description: 
+  '''
+  大杂烩说是
+  '''
+size: 4
+health: 2000
+category: crafting
+hasPower: true
+hasLiquids: true
+hasItems: true
+
+
+requirements: [
+  carbide/250
+  tungsten/200
+  oxide/150
+  silicon/150
+]
+
+
+consumeHeat: 25.0 
+heatConfig: {
+  acceptHeat: true
+}
+
+consumes: {
+  power: 25
+  items: [
+    rock-salt/1
+  ]
+
+  liquids: [
+    crude-benzene/0.5
+    nitric-acid/0.45    
+    sulfuric-acid/0.15  
+    water/0.1          
+    nitrogen/0.15      
+  ]
+}
+
+
+outputItem: trinitrotoluene/1
+craftTime: 600
+
+drawer: {
+  type: DrawMulti
+  drawers: [
+    { 
+        type: DrawRegion, 
+        suffix: "-bottom" 
+        }
+    
+
+    {
+      type: DrawLiquidTile
+      drawLiquid: sulfuric-acid
+      padding: 2
+    }
+    {
+      type: DrawLiquidTile
+      drawLiquid: crude-benzene
+      padding: 6
+    }
+    
+
+    {
+      type: DrawCells
+      color: "F2E35E" 
+      particleColor: "E8D580"
+      particles: 30
+      range: 3
+    }
+
+    {
+      type: DrawHeatOutput
+      color: "ff5d5d"
+    }
+
+    { 
+        type: DrawRegion, 
+        
+        }
+    
+
+    {
+      type: DrawSoftParticles
+      color: "ffffff"
+      alpha: 0.2
+      size: 10
+    }
+  ]
+}
+
+
+research: sulfuric-acid

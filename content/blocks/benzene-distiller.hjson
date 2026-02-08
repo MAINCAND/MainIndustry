@@ -1,0 +1,62 @@
+type: GenericCrafter
+name: benzene-distiller
+localizedName: 粗苯分馏器
+description: 通过分馏工艺从芳油或石油中提取粗苯液。需要大量油。
+
+size: 2
+health: 400
+category: crafting
+hasLiquids: true
+hasPower: true
+
+requirements: [
+  beryllium/150
+  graphite/80
+  oxide/30
+]
+
+consumes: {
+  power: 3
+  liquid: {
+
+    liquid: oil
+    amount: 1
+  }
+}
+
+outputLiquid: crude-benzene/0.2
+
+craftTime: 90
+
+updateEffect: smeltsmoke
+
+drawer: {
+  type: DrawMulti
+  drawers: [
+
+    {
+      type: DrawRegion
+      suffix: "-bottom"
+    }
+
+
+     {
+      type: DrawRegion
+    }
+  
+
+
+   
+    {
+      type: DrawLiquidTile
+      drawLiquid: crude-benzene
+      padding: 3
+    }
+
+
+    {
+      type: DrawRegion
+      suffix: "-top"
+    }
+  ]
+}

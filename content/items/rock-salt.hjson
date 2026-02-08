@@ -1,0 +1,8 @@
+type: item
+name: rock-slat
+
+description: 一种名为石盐的盐
+color: "e5e5e5" 
+
+flammability: 0
+explosiveness: 0

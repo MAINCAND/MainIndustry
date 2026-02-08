@@ -1,0 +1,41 @@
+type: AttributeCrafter
+name: nitric-acid-arc-furnace
+localizedName: 电弧硝酸炉
+description: 
+  '''
+  工业固氮的核心设备。
+  利用高压电弧引发氮气与臭氧的氧化反应，并通入水流吸收生成硝酸。
+  工作时会产生巨大的热量。
+  '''
+size: 3
+health: 1200
+category: crafting
+hasPower: true
+hasLiquids: true
+
+consumes: {
+  power: 20
+  liquids: [
+    water/0.2      
+    ozone/0.12     
+    nitrogen/0.3   
+  ]
+}
+
+
+outputLiquid: nitric-acid/0.15
+craftTime: 120
+
+
+requirements: [
+  beryllium/250
+  oxide/120
+  silicon/150
+  carbide/50
+]
+
+
+
+
+updateEffect: smeltsmoke
+research: electrolyzer

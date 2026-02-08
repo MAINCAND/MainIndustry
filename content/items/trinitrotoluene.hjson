@@ -1,0 +1,20 @@
+
+type: item
+name: trinitrotoluene
+localizedName: 硝化苯晶
+
+color: "E8D580" 
+
+description: 
+  '''
+  通过高压硝化工艺使芳烃分子重组而成的固体结晶。
+  '''
+
+
+explosiveness: 10
+flammability: 0.5   
+radioactivity: 0.0
+charge: 0.0
+
+cost: 1.5
+research: crude-benzene
