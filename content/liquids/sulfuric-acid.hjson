@@ -1,0 +1,8 @@
+type: liquid
+name: sulfuric-acid
+localizedName: 硫酸
+color: "#3D523B" 
+flammability: 0.1
+explosiveness: 0.3 
+viscosity: 0.1
+heatCapacity: 0.6

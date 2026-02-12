@@ -1,0 +1,9 @@
+{
+	"type": "item",
+	"name": "dense-lead",
+	"description": "浓缩过后的铅",
+	"cost": 1,
+	"color": "8886A6",
+	"radioactivity": 0.2,
+	"research": "lead"
+}

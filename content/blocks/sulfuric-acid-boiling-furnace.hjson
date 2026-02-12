@@ -1,0 +1,74 @@
+type: GenericCrafter
+name: sulfuric-acid-boiling-furnace
+localizedName: 沸腾炉
+description: 
+  '''
+  生产硫酸
+  '''
+size: 3
+category: crafting
+hasPower: true
+hasLiquids: true
+hasItems: true
+
+
+requirements: [
+  beryllium/150
+  graphite/100
+  oxide/40
+]
+
+consumes: {
+  power: 10.0
+  items: [
+
+    pyratite/5 
+
+    dense-lead/1   
+  ]
+  liquids: [
+    water/0.3
+    ozone/0.25
+  ]
+}
+
+outputLiquid: sulfuric-acid/0.1
+craftTime: 80
+
+drawer: {
+  type: DrawMulti
+  drawers: [
+    { 
+    type: DrawRegion, 
+    suffix: "-bottom" 
+    }
+
+    {
+      type: DrawLiquidTile
+      drawLiquid: sulfuric-acid
+      padding: 3
+    }
+
+    {
+      type: DrawCells
+      color: "F2E35E"
+      particleColor: "E8D580"
+      particles: 20
+      range: 2
+    }
+    { 
+        type: DrawRegion, 
+    }
+
+    {
+      type: DrawSoftParticles
+      color: ffffff
+      alpha: 0.3
+      size: 8
+    }
+  ]
+}
+
+
+outputHeat: 5.0 
+updateEffect: smeltsmoke
